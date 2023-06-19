@@ -43,8 +43,8 @@ export default function Home() {
 
         <div className='flex flex-col lg:flex-row items-center'>
           <div className='w-full lg:w-1/2 text-center lg:text-right lg:pr-16'>
-            <h2 className='text-5xl py-3 text-teal-500 font-semibold animate-typing'>PARNISH SHARMA </h2>
-            <h2 className='text-3xl py-4 font-thin  text-black '> FULL STACK DEVELOPER</h2>
+<h2 className='text-3xl py-3 text-teal-500 font-semibold animate-typing md:2 mb-4 md:mb-0'>PARNISH SHARMA</h2>
+            <h2 className='text-2xl py-4 font-thin  text-black '> FULL STACK DEVELOPER</h2>
             <h3 className='text-2xl py-5 font-serif text-center lg:text-right lg:ml-auto lg:mr-0 text-black'>
               Hi, I'm Parnish, a passionate and aspiring Frontend and Backend Developer. I am currently pursuing my B.Tech in Computer Science and Engineering (CSE) Core at SRM Institute of Science and Technology in Chennai. I am currently in my 3rd year, 5th semester.
             </h3>
