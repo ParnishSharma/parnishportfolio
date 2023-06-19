@@ -1,0 +1,8 @@
+services:
+  - name: web
+    type: docker
+    env:
+      - key: NODE_ENV
+        value: production
+    buildCommand: docker build -t nextjs-app .
+    startCommand: docker run -p $PORT:$PORT nextjs-app
