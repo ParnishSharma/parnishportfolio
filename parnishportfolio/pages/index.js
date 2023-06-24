@@ -78,14 +78,13 @@ export default function Home() {
 
 
 
-      <section className=' dark:bg-gray-700'>
+      <section className=' '>
         <div>
           <h3 className='text-center text-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text py-14 px-8'>ABOUT MY PROJECTS</h3>
         </div>
 
-        <div>
-          <div className='text-center text-2xl font-serif'>
-            <p className='animate-pulse-gradient  text-black'>
+          <div className='text-center text-2xl font-serif  dark:bg-gray-600 '>
+            <p className='animate-pulse-gradient    text-black'>
               In my web development journey, I have successfully built a range of projects including a news app, Django forms, and a quote generator.
               The news app provides up-to-date news articles, allowing users to stay informed.
               With Django forms, I created interactive and user-friendly forms for seamless data input and management.
@@ -93,7 +92,7 @@ export default function Home() {
               These projects showcase my skills in utilizing different technologies to deliver functional and engaging web applications that cater to specific needs.
             </p>
           </div>
-        </div>
+        
 
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12'>
           <a href='https://newskyu.onrender.com/' target='_blank' rel='noopener noreferrer'>
@@ -173,26 +172,26 @@ export default function Home() {
               <div>
                 <h2 className="text-xl text-red-400 font-bold">Schooling:</h2><br />
                 <div className='  text-black '>
-                  <p className=" text-xl mb-1 font-serif">Maharishi Vidya Mandir Dangoh Khas, Himachal Pradesh{' '}<a href="https://www.google.com/maps/place/Maharishi+Vidya+Mandir+-+Daulatpur+Chowk/@31.7748009,74.8779867,8z/data=!4m10!1m2!2m1!1smahrishi+vidya!3m6!1s0x391b174c1d5c1903:0xb8f3e620dfcba569!8m2!3d31.7748009!4d75.9985922!15sCg9tYWhhcmlzaGkgdmlkeWEiA4gBAZIBBnNjaG9vbOABAA!16s%2Fg%2F11j26x7rp3?entry=ttu" target="_blank" rel="noopener noreferrer">
-                    <AiOutlineEnvironment className='text-2xl' />
+                  <p className=" text-xl mb-1 font-semibold ">Maharishi Vidya Mandir Dangoh Khas, Himachal Pradesh{' '}<a href="https://www.google.com/maps/place/Maharishi+Vidya+Mandir+-+Daulatpur+Chowk/@31.7748009,74.8779867,8z/data=!4m10!1m2!2m1!1smahrishi+vidya!3m6!1s0x391b174c1d5c1903:0xb8f3e620dfcba569!8m2!3d31.7748009!4d75.9985922!15sCg9tYWhhcmlzaGkgdmlkeWEiA4gBAZIBBnNjaG9vbOABAA!16s%2Fg%2F11j26x7rp3?entry=ttu" target="_blank" rel="noopener noreferrer">
+                    <AiOutlineEnvironment className='text-2xl text-blue-400' />
                   </a></p>
                   <p className="text-xl mb-4  text-black">Percentage: 80.6% (10th class)</p>
                 </div>
                 <div><br />
-                  <p className="mb-1 text-xl font-serif  text-black">ST.D.R Public Sen. Sec School, Gagret, Himachal Pradesh{' '}
+                  <p className="mb-1 text-xl font-semibold text-black">ST.D.R Public Sen. Sec School, Gagret, Himachal Pradesh{' '}
                     <a href="https://www.google.com/maps/place/St+D.+R.+Public+Senior+Secondary+School/@31.6652076,76.0537174,17z/data=!3m1!4b1!4m6!3m5!1s0x391b1f30adcf891f:0x236e1e073e3c4f5!8m2!3d31.6652076!4d76.056287!16s%2Fg%2F11bwn7x6pz?entry=ttu" target="_blank" rel="noopener noreferrer">
-                      <AiOutlineEnvironment className='text-2xl' />
+                      <AiOutlineEnvironment className='text-2xl text-blue-400' />
                     </a></p>
                   <p className=" text-xl mb-4  text-black">Percentage: 86.8% (12th class)</p>
                 </div>
               </div>
               <div className='px-2 text-xl '>
-                <h2 className="text-lg text-red-400 font-bold ">College:</h2><br />
-                <div className=' text-black  '>
-                  <p className="mb-1 font-serif">
+                <h2 className="text-xl text-red-400 font-bold ">College:</h2><br />
+                <div className=' text-black ' >
+                  <p className="mb-1 font-semibold ">
                     SRM Institute of Science and Technology, Kattankulathur, Chennai{' '}
-                    <a href="https://maps.google.com/maps?q=R2FV+6Q7, Potheri, SRM Nagar, Kattankulathur, Tamil Nadu 603203" target="_blank" rel="noopener noreferrer">
-                      <AiOutlineEnvironment className='text-2xl' />
+                    <a href="https://maps.google.com/maps?q=R2FV+6Q7, Potheri, SRM Nagar, Kattankulathur, Tamil Nadu 603203" target="_blank" rel="noopener noreferrer text- ">
+                      <AiOutlineEnvironment className='text-2xl text-blue-400' />
                     </a>
                   </p>      <p className="mb-1">B.Tech in CSE-CORE</p>
                   <p className="mb-1">Currently in : 3rd year, 5th semester</p>
@@ -248,7 +247,7 @@ export default function Home() {
             I have successfully completed certifications in various fields including Python, React frontend development, version control, and have actively participated in hackathons. These certifications have equipped me with the necessary skills and knowledge to excel in software development, allowing me to contribute effectively to projects and stay up-to-date with the latest industry trends.</h3>
 
         </div>
-        <div className="bg-white  text-center rounded-2xl shadow-lg p-9  dark:bg-gray-600">
+        <div className="bg-white  text-center rounded-2xl shadow-2xl p-9  dark:bg-gray-600">
 
           <h2 className="text-2xl font-semibold mb-4  text-black">My Certifications</h2>
           <a href="https://drive.google.com/drive/folders/1PRkEv05NU9Cvp7TLeLw7wiGZocp274ZG" target="_blank" rel="noopener noreferrer" className="text-teal-500 underline text-xl">View Certificates</a>
@@ -262,14 +261,14 @@ export default function Home() {
 
           <h3 className='text-center text-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text pt-14 '>CONTACT ME</h3>
         
-        <div className="bg-gray-100 py-8 flex justify-center items-center">
-      <div className="max-w-md bg-white rounded-lg shadow-lg p-6 w-full">
-        <h1 className="text-2xl font-bold mb-4">Feedback Form</h1>
+        <div className="bg-gray-100 py-8 flex justify-center items-center  dark:bg-gray-600">
+      <div className="max-w-md bg-white rounded-lg shadow-2xl p-6 w-full dark:bg-gray-600">
+        <h1 className="text-2xl font-bold mb-4 text-center text-teal-400 dark:bg-gray-600">Feedback Form</h1>
         <Feedback />
       </div>
     </div>
-
-        <div className='flex justify-center py-1 text-slate-900 text-5xl gap-8'>
+<h2 className='text-2xl text-center p-6 text-teal-600'>MY SOCIAL LINKS</h2>
+        <div className='flex justify-center py-1 text-slate-900 text-5xl gap-8 pb-6'>
   <a href="https://www.instagram.com/parnish_sharma/" target="_blank" rel="noopener noreferrer" className="hover:text-teal-500">
     <AiFillInstagram />
   </a>
