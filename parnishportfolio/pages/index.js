@@ -1,3 +1,4 @@
+process.env.NODE_NO_WARNINGS = 'stream/web';
 import { Inter } from 'next/font/google';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiOutlineEnvironment } from "react-icons/ai";
@@ -66,9 +67,9 @@ export default function Home() {
         </div>
 
         <div className='flex justify-center py-1 text-slate-900 text-5xl gap-8'>
-         <a href="https://www.instagram.com/parnish_sharma/" target="_blank" rel="noopener noreferrer"> <AiFillInstagram /></a>
-         <a href="https://www.linkedin.com/in/parnish-sharma-63911921b/" target="_blank" rel="noopener noreferrer">    <AiFillLinkedin /></a>
-         <a href="https://github.com/ParnishSharma" target="_blank" rel="noopener noreferrer">    <AiFillGithub /></a>
+         <a href="https://www.instagram.com/parnish_sharma/" target="_blank" rel="noopener noreferrer"className="hover:text-teal-500"> <AiFillInstagram /></a>
+         <a href="https://www.linkedin.com/in/parnish-sharma-63911921b/" target="_blank" rel="noopener noreferrer"className="hover:text-teal-500">    <AiFillLinkedin /></a>
+         <a href="https://github.com/ParnishSharma" target="_blank" rel="noopener noreferrer"className="hover:text-teal-500"><AiFillGithub /></a>
         </div>
       </section>
 
@@ -76,7 +77,7 @@ export default function Home() {
 
 
 
-      <section className=' dark:bg-gray-600'>
+      <section className=' dark:bg-gray-700'>
         <div>
           <h3 className='text-center text-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text py-14 px-8'>ABOUT MY PROJECTS</h3>
         </div>
@@ -103,7 +104,7 @@ export default function Home() {
 
           <a href='https://tryforms.onrender.com/' target='_blank' rel='noopener noreferrer'>
             <div className=' text-teal-500  rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300 flex flex-col items-center justify-center  dark:bg-gray-600'>
-              <img src='/Screenshot (149).png' alt='Django Forms' className='w-full h-full object-cover rounded-t-lg project-image' />
+              <img src='/Screenshot (149).png' alt='Django Forms' className='min-w-full min-h-fit object-cover rounded-t-lg project-image' />
               <h4 className='text-xl font-semibold text-center py-4'>Django Forms</h4>
             </div>
           </a>
@@ -119,6 +120,20 @@ export default function Home() {
             <div className=' text-teal-500  rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300 flex flex-col items-center justify-center  dark:bg-gray-600'>
               <img src='/Screenshot (146).png' alt='Movie Rater' className='w-full h-full object-cover rounded-t-lg project-image' />
               <h4 className='text-xl font-semibold text-center py-4'>MOVIE-RATING</h4>
+            </div>
+          </a>
+
+          <a href='https://parnishsharma.github.io/routinelist/' target='_blank' rel='noopener noreferrer'>
+            <div className=' text-teal-500  rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300 flex flex-col items-center justify-center  dark:bg-gray-600'>
+              <img src='/Screenshot (151).png' alt='Movie Rater' className='w-full h-full object-cover rounded-t-lg project-image' />
+              <h4 className='text-xl font-semibold text-center py-4'>Routine-Task</h4>
+            </div>
+          </a>
+
+          <a href='https://nochapp.onrender.com/' target='_blank' rel='noopener noreferrer'>
+            <div className=' text-teal-500  rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300 flex flex-col items-center justify-center  dark:bg-gray-600'>
+              <img src='/Screenshot (152).png' alt='Movie Rater' className='w-full h-full object-cover rounded-t-lg project-image' />
+              <h4 className='text-xl font-semibold text-center py-4'>Node-Chat</h4>
             </div>
           </a>
         </div>
@@ -153,7 +168,7 @@ export default function Home() {
             </ul>
 
             <h1 className=" text-teal-500  text-3xl font-bold mt-8 mb-6 pb-5">Education:</h1>
-            <div className="grid grid-cols-2 gap-8 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
               <div>
                 <h2 className="text-xl text-red-400 font-bold">Schooling:</h2><br />
                 <div className='  text-black '>
@@ -170,9 +185,9 @@ export default function Home() {
                   <p className=" text-xl mb-4  text-black">Percentage: 86.8% (12th class)</p>
                 </div>
               </div>
-              <div className='px-2 text-xl'>
-                <h2 className="text-lg text-red-400 font-bold">College:</h2><br />
-                <div className=' text-black'>
+              <div className='px-2 text-xl '>
+                <h2 className="text-lg text-red-400 font-bold ">College:</h2><br />
+                <div className=' text-black  '>
                   <p className="mb-1 font-serif">
                     SRM Institute of Science and Technology, Kattankulathur, Chennai{' '}
                     <a href="https://maps.google.com/maps?q=R2FV+6Q7, Potheri, SRM Nagar, Kattankulathur, Tamil Nadu 603203" target="_blank" rel="noopener noreferrer">
@@ -180,7 +195,9 @@ export default function Home() {
                     </a>
                   </p>      <p className="mb-1">B.Tech in CSE-CORE</p>
                   <p className="mb-1">Currently in : 3rd year, 5th semester</p>
-                  <p>CGPA: 9.41</p>
+                  <p><b>CGPA</b>: 9.41 </p>
+                  <p><b>Student Club</b> : Next Tech Lab</p>
+
                 </div>
               </div>
             </div>
@@ -197,7 +214,7 @@ export default function Home() {
                 <li>Music-Listening</li>
                 <li>writing</li>
                 <li>Badminton</li>
-
+                <li>Gyming</li>
               </ul>
 
 
@@ -251,11 +268,17 @@ export default function Home() {
           </p>
         </div>
         <div className='flex justify-center py-1 text-slate-900 text-5xl gap-8'>
+  <a href="https://www.instagram.com/parnish_sharma/" target="_blank" rel="noopener noreferrer" className="hover:text-teal-500">
+    <AiFillInstagram />
+  </a>
+  <a href="https://www.linkedin.com/in/parnish-sharma-63911921b/" target="_blank" rel="noopener noreferrer" className="hover:text-teal-600">
+    <AiFillLinkedin />
+  </a>
+  <a href="https://github.com/ParnishSharma" target="_blank" rel="noopener noreferrer" className="hover:text-teal-500">
+    <AiFillGithub />
+  </a>
+</div>
 
-        <a href="https://www.instagram.com/parnish_sharma/" target="_blank" rel="noopener noreferrer" > <AiFillInstagram /></a>
-         <a href="https://www.linkedin.com/in/parnish-sharma-63911921b/" target="_blank" rel="noopener noreferrer">    <AiFillLinkedin /></a>
-         <a href="https://github.com/ParnishSharma" target="_blank" rel="noopener noreferrer">    <AiFillGithub /></a>
-        </div>
       </section>
     </main>
     </div>

@@ -10,9 +10,11 @@
   .animate-typing {
     display: inline-block;
     overflow: hidden;
-    white-space: nowrap;
+    white-space:pre;
     animation: typing 2s steps(30, end);
+
   }
+  
   .navbar-line {
     position: fixed;
     top: 0;
