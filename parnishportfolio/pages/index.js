@@ -4,6 +4,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiOutlineEnvironment } from "react-icons/ai";
 import Image from 'next/image';
 import { useState } from 'react';
+import Feedback from './Feedback';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -258,15 +259,16 @@ export default function Home() {
 
 
       <section>
-        <div>
 
-          <h3 className='text-center text-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text py-14 px-8 '>CONTACT ME</h3>
-        </div>
-        <div>
-          <p className='text-xl text-center bg-slate-500'>Developer: PARNISH SHARMA<br />
-            E-mail: parnishs7@gmail.com<br />
-          </p>
-        </div>
+          <h3 className='text-center text-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text pt-14 '>CONTACT ME</h3>
+        
+        <div className="bg-gray-100 py-8 flex justify-center items-center">
+      <div className="max-w-md bg-white rounded-lg shadow-lg p-6 w-full">
+        <h1 className="text-2xl font-bold mb-4">Feedback Form</h1>
+        <Feedback />
+      </div>
+    </div>
+
         <div className='flex justify-center py-1 text-slate-900 text-5xl gap-8'>
   <a href="https://www.instagram.com/parnish_sharma/" target="_blank" rel="noopener noreferrer" className="hover:text-teal-500">
     <AiFillInstagram />
@@ -278,6 +280,11 @@ export default function Home() {
     <AiFillGithub />
   </a>
 </div>
+<div>
+          <p className='text-xl text-center bg-slate-500'>Developer : PARNISH SHARMA<br />
+            E-mail : parnishs7@gmail.com<br />
+          </p>
+        </div>
 
       </section>
     </main>

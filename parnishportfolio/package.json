@@ -2,7 +2,6 @@
   "name": "parnishportfolio",
   "version": "0.1.0",
   "private": true,
-
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +10,7 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
+    "emailjs-com": "^3.2.0",
     "next": "13.4.6",
     "nodemailer": "^6.9.3",
     "postcss": "8.4.24",
