@@ -263,7 +263,7 @@ export default function Home() {
         
         <div className="bg-gray-100 py-8 flex justify-center items-center  dark:bg-gray-600">
       <div className="max-w-md bg-white rounded-lg shadow-2xl p-6 w-full dark:bg-gray-600">
-        <h1 className="text-2xl font-bold mb-4 text-center text-teal-400 dark:bg-gray-600">Feedback Form</h1>
+        <h1 className="text-2xl font-bold mb-4 text-center text-teal-400 dark:bg-gray-600">Email me</h1>
         <Feedback />
       </div>
     </div>
