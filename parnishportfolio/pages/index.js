@@ -2,9 +2,10 @@ process.env.NODE_NO_WARNINGS = 'stream/web';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
 import { useState } from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineEnvironment } from "react-icons/ai";
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineEnvironment } from "react-icons/ai/index";
+import { BsFillMoonStarsFill } from 'react-icons/bs/index';
 import Feedback from './Feedback';
+import LeetcodeStats from './LeetcodeStats';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -48,7 +49,7 @@ export default function Home() {
 <h2 className='text-3xl py-3 text-teal-500 font-semibold animate-typing md:text-2xl mb-4 '>PARNISH SHARMA</h2>
             <h2 className='text-2xl py-4 font-thin  text-black '> FULL STACK DEVELOPER</h2>
             <h3 className='text-2xl py-5 font-serif text-center lg:text-right lg:ml-auto lg:mr-0 text-black'>
-              Hi, I'm Parnish, a passionate and aspiring Frontend and Backend Developer. I am currently pursuing my B.Tech in Computer Science and Engineering (CSE) Core at SRM Institute of Science and Technology in Chennai. I am currently in my 4th year, 7th semester.
+              Hi, I'm Parnish, a passionate and aspiring Frontend and Backend Developer. I am currently pursuing my B.Tech in Computer Science and Engineering (CSE) Core at SRM Institute of Science and Technology in Chennai. I am currently in my 4th year.
             </h3>
           </div>
           <div className='w-full lg:w-1/2 flex justify-center'>
@@ -79,7 +80,8 @@ export default function Home() {
 
 
       <section className=' '>
-        <div>
+      <LeetcodeStats username="parnishs7"/>
+      <div>
           <h3 className='text-center text-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text py-14 px-8'>ABOUT MY PROJECTS</h3>
         </div>
 
@@ -162,9 +164,9 @@ export default function Home() {
               <li>React.js</li>
               <li>Python</li>
               <li>Flask</li>
-              <li>Django</li>
+              <li>Node.js</li>
               <li>MongoDB</li>
-              <li>FastAPI</li>
+              <li>Express.js</li>
             </ul>
 
             <h1 className=" text-teal-500  text-3xl font-bold mt-8 mb-6 pb-5">Education:</h1>

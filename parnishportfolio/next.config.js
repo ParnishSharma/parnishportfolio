@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  async rewrites() {
+    return [
+      {
+        source: '/graphql/:path*',
+        destination: 'https://leetcode.com/graphql/:path*', // Proxy to LeetCode GraphQL endpoint
+      },
+    ];
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
