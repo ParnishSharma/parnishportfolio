@@ -1,5 +1,3 @@
-// components/LeetcodeStats.js
-
 import { useEffect, useState } from 'react';
 
 const fetchLeetcodeData = async (username) => {
@@ -18,7 +16,7 @@ const fetchLeetcodeData = async (username) => {
 
 const LeetcodeStats = ({ username }) => {
   const [solvedQuestions, setSolvedQuestions] = useState(0);
-  const [ranking, setRanking] = useState(0); // Add ranking state
+  const [ranking, setRanking] = useState(0); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -27,7 +25,7 @@ const LeetcodeStats = ({ username }) => {
       try {
         const data = await fetchLeetcodeData(username);
         setSolvedQuestions(data.totalSolved);
-        setRanking(data.ranking); // Set ranking from data
+        setRanking(data.ranking); 
         setLoading(false);
       } catch (error) {
         setError(error.message);

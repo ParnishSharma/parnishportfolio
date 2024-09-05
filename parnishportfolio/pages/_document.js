@@ -1,5 +1,6 @@
-// pages/_document.js
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { Analytics } from "@vercel/analytics/react";
+import Document, { Head, Html, Main, NextScript } from 'next/document';
+
 
 class MyDocument extends Document {
   render() {
@@ -19,11 +20,12 @@ class MyDocument extends Document {
                     });
                   });
                 }
-              `,
+              `
             }}
           />
         </Head>
         <body>
+        <Analytics mode={'production'} />
           <Main />
           <NextScript />
         </body>

@@ -6,6 +6,7 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineEnvironment } f
 import { BsFillMoonStarsFill } from 'react-icons/bs/index';
 import Feedback from './Feedback';
 import LeetcodeStats from './LeetcodeStats';
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] });
 
